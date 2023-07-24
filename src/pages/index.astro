@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Coches Electricos, energía solar y limpia | Tesla españa">
 	<main>
 
 		<header class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white"
@@ -40,22 +40,29 @@ import Layout from '../layouts/Layout.astro';
 
 		</header>
 
-		<section class="bg-black h-screen w-screen text-center relative overflow-hidden" >
-			<header class="z-30 relative">
-				<h2 class="text-white pt-40 text-4xl" >Disfrute de Tesla</h2>
-				<p class="text-white text-sm" >Programe una prueba de conducción hoy mismo</p>
+		<section class="  bg-black h-screen w-screen text-center overflow-hidden relative" >
+			<div class="z-30 relative h-full flex flex-col">
 
-			</header>
+				<header>
+					<h2 class="text-white pt-40 text-[40px]" >Disfrute de Tesla</h2>
+					<p class="text-white text-sm" >Programe una prueba de conducción hoy mismo</p>
+	
+				</header>
+	
+				<footer class=" flex flex-grow justify-end flex-col pb-20" >
+					<div>
 
-			<footer class="z-30 relative" >
-				<a href="#">
-					Prueba de conducción
-				</a>
+						<a class="border-[3px] border-white text-sm backdrop-blur rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors" href="#">
+							Prueba de conducción
+						</a>
+					</div>
+	
+				</footer>
 
-			</footer>
+			</div>
 
 			<div class="absolute top-0 bottom-0 w-full h-full z-10">
-				<video class="object-center " autoplay muted loop src="/video.webm"></video>
+				<video class="object-center object-cover w-full h-full" autoplay muted loop src="/video.webm"></video>
 
 			</div>
 		</section>
